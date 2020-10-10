@@ -1,8 +1,9 @@
 /*!
- * [libraryName] v0.0.0
- * (c) [authorFullName]
+ * @iagobelo/propolis v0.0.0
+ * (c) Iago Belo
  * Released under the MIT License.
  */
+
 /**
  * Check if value is parseable to number.
  * @example ```ts
@@ -18,7 +19,9 @@
  * ```
  * @param value - An `unknown` value to be checked.
  */
-var isNumberParseable = function (value) { return !Number.isNaN(Number(value)); };
+var isNumberParseable = function (value) {
+    return !Number.isNaN(Number(value));
+};
 
 export { isNumberParseable };
 //# sourceMappingURL=index.esm.js.map

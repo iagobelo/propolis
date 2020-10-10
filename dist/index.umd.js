@@ -1,13 +1,14 @@
 /*!
- * [libraryName] v0.0.0
- * (c) [authorFullName]
+ * @iagobelo/propolis v0.0.0
+ * (c) Iago Belo
  * Released under the MIT License.
  */
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global['[libraryCammelCaseName]'] = {}));
-}(this, function (exports) { 'use strict';
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.Propolis = {}));
+}(this, (function (exports) { 'use strict';
 
   /**
    * Check if value is parseable to number.
@@ -24,11 +25,13 @@
    * ```
    * @param value - An `unknown` value to be checked.
    */
-  var isNumberParseable = function (value) { return !Number.isNaN(Number(value)); };
+  var isNumberParseable = function (value) {
+      return !Number.isNaN(Number(value));
+  };
 
   exports.isNumberParseable = isNumberParseable;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=index.umd.js.map

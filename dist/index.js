@@ -1,8 +1,9 @@
 /*!
- * [libraryName] v0.0.0
- * (c) [authorFullName]
+ * @iagobelo/propolis v0.0.0
+ * (c) Iago Belo
  * Released under the MIT License.
  */
+
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -22,7 +23,9 @@ Object.defineProperty(exports, '__esModule', { value: true });
  * ```
  * @param value - An `unknown` value to be checked.
  */
-var isNumberParseable = function (value) { return !Number.isNaN(Number(value)); };
+var isNumberParseable = function (value) {
+    return !Number.isNaN(Number(value));
+};
 
 exports.isNumberParseable = isNumberParseable;
 //# sourceMappingURL=index.js.map
